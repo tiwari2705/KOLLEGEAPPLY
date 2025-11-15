@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandigarh University - Discover. Learn. Empower.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container-lg">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-university me-2" style="color: var(--primary-color);"></i>Chandigarh University
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#placements">Placements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#facilities">Facilities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#apply">Apply</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="notification-container position-fixed top-0 end-0 p-3" style="z-index: 1050;"></div>
+
+    <section class="hero">
+        <div class="container-lg">
+            <h1>Chandigarh University</h1>
+            <p>Discover. Learn. Empower.</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
+                <button class="btn btn-light btn-lg fw-bold" data-bs-toggle="modal" data-bs-target="#feesModal">
+                    <i class="fas fa-money-bill me-2"></i>Check Course-wise Fees
+                </button>
+                <button class="btn btn-outline-light btn-lg fw-bold" id="downloadBrochure">
+                    <i class="fas fa-download me-2"></i>Download Brochure
+                </button>
+                <a href="#apply" class="btn btn-primary btn-lg fw-bold">
+                    <i class="fas fa-edit me-2"></i>Apply Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="overview" class="py-5 bg-light">
+        <div class="container-lg">
+            <h2 class="mb-5 section-heading">About Chandigarh University</h2>
+            <div class="row align-items-center g-5">
+                <div class="col-md-6">
+                    <p class="lead text-muted mb-4">Chandigarh University (CU) is a leading NAAC A+ Graded University known for its excellence in research, innovation, and industry-focused education. We provide a vibrant academic environment and world-class infrastructure to help students achieve their dreams.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i> <strong>NAAC A+ Graded University</strong></li>
+                        <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i> <strong>Top-Ranked for Placements</strong></li>
+                        <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i> <strong>Globally-Aligned Curriculum</strong></li>
+                        <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i> <strong>Vibrant Campus Life</strong></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop" alt="Campus" class="img-fluid rounded-3 shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses" class="py-5">
+        <div class="container-lg">
+            <h2 class="mb-5 section-heading">Our Programs</h2>
+            <div id="coursesContainer" class="row g-4">
+                </div>
+        </div>
+    </section>
+
+    <section id="placements" class="py-5 bg-light">
+        <div class="container-lg">
+            <h2 class="mb-5 section-heading">Placement Statistics</h2>
+            <div class="row text-center g-4">
+                <div class="col-md-3 stat-card">
+                    <h3 id="placementPercentage">9125+</h3>
+                    <p class="text-muted">Total Placements</p>
+                </div>
+                <div class="col-md-3 stat-card">
+                    <h3 id="avgPackage">9.54 LPA</h3>
+                    <p class="text-muted">Average Package</p>
+                </div>
+                <div class="col-md-3 stat-card">
+                    <h3 id="highestPackage">1.7 CR</h3>
+                    <p class="text-muted">Highest Package</p>
+                </div>
+                <div class="col-md-3 stat-card">
+                    <h3 id="topRecruiters">900+</h3>
+                    <p class="text-muted">Top Recruiters</p>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <h2 class="mb-5 section-heading">Our Top Recruiters</h2>
+                    <div id="recruiterCarousel" class="carousel slide" data-bs-ride="true" data-bs-interval="5000" data-bs-pause="hover">
+                        <div class="carousel-inner" id="recruiterCarouselInner">
+                             </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="facilities" class="py-5">
+        <div class="container-lg">
+            <h2 class="mb-5 section-heading">Modern Campus Facilities</h2>
+            <div id="facilitiesContainer" class="row g-4">
+                </div>
+        </div>
+    </section>
+
+    <section id="apply" class="py-5 bg-light">
+        <div class="container-lg">
+            <h2 class="mb-5 section-heading">Apply for Admission</h2>
+            
+            <div class="row g-5 justify-content-center">
+                
+                <div class="col-lg-5">
+                    <h4 class="fw-bold mb-3">Begin Your Journey at CU</h4>
+                    <p class="text-muted mb-4">Applying to Chandigarh University is your first step towards a world-class education and a successful career.</p>
+                    <p class="text-muted mb-4">Our admissions team is here to help you at every step. Feel free to reach out with questions about our programs or the application process.</p>
+                    
+                    <ul class="list-unstyled">
+                        <li class="d-flex mb-3">
+                            <i class="fas fa-check-circle fa-fw me-3 mt-1" style="color: var(--primary-color);"></i>
+                            <div>
+                                <strong class="d-block">Streamlined Application</strong>
+                                <span class="text-muted">Our form is quick, secure, and easy to complete.</span>
+                            </div>
+                        </li>
+                        <li class="d-flex mb-3">
+                            <i class="fas fa-headset fa-fw me-3 mt-1" style="color: var(--primary-color);"></i>
+                            <div>
+                                <strong class="d-block">Dedicated Support</strong>
+                                <span class="text-muted">An admissions counselor will contact you to guide you.</span>
+                            </div>
+                        </li>
+                        <li class="d-flex mb-3">
+                            <i class="fas fa-trophy fa-fw me-3 mt-1" style="color: var(--primary-color);"></i>
+                            <div>
+                                <strong class="d-block">Scholarship Opportunities</strong>
+                                <span class="text-muted">We review every applicant for scholarships up to 100%.</span>
+                            </div>
+                        </li>
+                        <li class="d-flex mb-3">
+                            <i class="fas fa-briefcase fa-fw me-3 mt-1" style="color: var(--primary-color);"></i>
+                            <div>
+                                <strong class="d-block">Top-Tier Placements</strong>
+                                <span class="text-muted">Gain access to our vast network of 900+ corporate partners.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="bg-white p-4 p-md-5 shadow rounded-3 h-100">
+                        <form id="admissionForm" class="needs-validation">
+                            
+                            <h5 class="mb-3 fw-bold" style="color: var(--primary-color);">
+                                <i class="fas fa-user-check me-2"></i>Personal Details
+                            </h5>
+                            
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Full Name *</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                        <input type="text" class="form-control" id="fullName" placeholder="Enter your Name" required>
+                                    </div>
+                                    <small class="text-danger d-none" id="fullNameError"></small>
+                                </div>
+                                
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Email Address *</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter your Email" required>
+                                    </div>
+                                    <small class="text-danger d-none" id="emailError"></small>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Phone Number (10-digit) *</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                                        <input type="tel" class="form-control" id="phone" placeholder="10-digit India number" required>
+                                    </div>
+                                    <small class="text-danger d-none" id="phoneError"></small>
+                                </div>
+                                
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">State *</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="fas fa-map-marker-alt"></i></span>
+                                        <select class="form-select" id="state" required>
+                                            <option value="">Select State</option>
+                                        </select>
+                                    </div>
+                                    <small class="text-danger d-none" id="stateError"></small>
+                                </div>
+                            </div>
+
+                            <h5 class="mt-4 mb-3 fw-bold" style="color: var(--primary-color);">
+                                <i class="fas fa-graduation-cap me-2"></i>Course Selection
+                            </h5>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Course Interested *</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="fas fa-graduation-cap"></i></span>
+                                        <select class="form-select" id="course" required>
+                                            <option value="">Select Course</option>
+                                        </select>
+                                    </div>
+                                    <small class="text-danger d-none" id="courseError"></small>
+                                </div>
+                                
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Intake Year *</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+                                        <select class="form-select" id="intake" required>
+                                            <option value="">Select Year</option>
+                                        </select>
+                                    </div>
+                                    <small class="text-danger d-none" id="intakeError"></small>
+                                </div>
+                            </div>
+
+                            <div class="mb-3 form-check mt-3">
+                                <input type="checkbox" class="form-check-input" id="consent" required>
+                                <label class="form-check-label" for="consent">
+                                    I agree to the terms and conditions and consent to receive communications
+                                </label>
+                                <small class="text-danger d-none d-block" id="consentError"></small>
+                            </div>
+
+                            <div class="d-grid gap-2 mt-4">
+                                <button type="submit" class="btn btn-primary btn-lg fw-bold">
+                                    <i class="fas fa-paper-plane me-2"></i>Submit Application
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal fade" id="feesModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">Course-wise Fee Structure</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="feesTableContainer" class="table-responsive">
+                         </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container-lg">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5><i class="fas fa-university me-2"></i>Chandigarh University</h5>
+                    <p class="text-white-50">Discover. Learn. Empower.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#overview">About</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#placements">Placements</a></li>
+                        <li><a href="#facilities">Facilities</a></li>
+                        <li><a href="#apply">Apply</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p class="text-white-50">
+                        <i class="fas fa-phone me-2"></i>1800 1212 88800<br>
+                        <i class="fas fa-envelope me-2"></i>admissions@cumail.in<br>
+                        <i class="fas fa-map-marker-alt me-2"></i>NH-05, Ludhiana-Chandigarh Highway, Mohali, Punjab
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center text-white-50 mb-0">&copy; 2025 Chandigarh University. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/university.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+{
+  "status": "success",
+  "courses": [
+    {
+      "id": 1,
+      "name": "B.Tech - Computer Science Engineering",
+      "duration": "4 years",
+      "fee": {
+        "min": 80000,
+        "max": 150000
+      }
+    },
+    {
+      "id": 2,
+      "name": "B.Tech - Mechanical Engineering",
+      "duration": "4 years",
+      "fee": {
+        "min": 75000,
+        "max": 140000
+      }
+    },
+    {
+      "id": 3,
+      "name": "MBA - Business Administration",
+      "duration": "2 years",
+      "fee": {
+        "min": 120000,
+        "max": 250000
+      }
+    },
+    {
+      "id": 4,
+      "name": "B.Tech - Civil Engineering",
+      "duration": "4 years",
+      "fee": {
+        "min": 70000,
+        "max": 130000
+      }
+    },
+    {
+      "id": 5,
+      "name": "B.Tech - Electrical Engineering",
+      "duration": "4 years",
+      "fee": {
+        "min": 72000,
+        "max": 135000
+      }
+    },
+    {
+      "id": 6,
+      "name": "BBA - General Management",
+      "duration": "3 years",
+      "fee": {
+        "min": 60000,
+        "max": 110000
+      }
+    }
+  ]
+}

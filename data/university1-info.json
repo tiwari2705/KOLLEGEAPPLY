@@ -1,0 +1,49 @@
+{
+  "university": {
+    "name": "Lovely Professional University",
+    "about": "Lovely Professional University (LPU) is a premier private university in Punjab, India, offering a vast range of programs and fostering a culture of research and innovation. With a strong focus on industry collaboration, we prepare students for successful careers in the rapidly evolving global landscape.",
+    "website": "www.lpu.in",
+    "contact": {
+      "phone": "+91-1824-517000",
+      "email": "admissions@lpu.co.in"
+    },
+    "placements": {
+      "placed_percentage": "95%",
+      "average_package": "8.5 LPA",
+      "highest_package": "62 LPA",
+      "top_recruiters": ["Cognizant", "Capgemini", "Wipro", "TCS", "Infosys", "Amazon", "Google", "Microsoft"]
+    },
+    "facilities": [
+      {
+        "id": 1,
+        "name": "Advanced Labs",
+        "description": "State-of-the-art research and computer labs."
+      },
+      {
+        "id": 2,
+        "name": "Central Library",
+        "description": "Extensive collection of books, journals, and digital resources."
+      },
+      {
+        "id": 3,
+        "name": "University Mall",
+        "description": "On-campus mall with shops, food courts, and more."
+      },
+      {
+        "id": 4,
+        "name": "Student Hostels",
+        "description": "Secure and comfortable accommodation for students."
+      },
+      {
+        "id": 5,
+        "name": "Innovation Studio",
+        "description": "Dedicated space for startups and student projects."
+      },
+      {
+        "id": 6,
+        "name": "Campus WiFi",
+        "description": "High-speed internet access across the entire campus."
+      }
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "status": "success",
+  "university": {
+    "name": "Chandigarh University",
+    "about": "Chandigarh University (CU) is a leading NAAC A+ Graded University known for its excellence in research, innovation, and industry-focused education. We provide a vibrant academic environment and world-class infrastructure to help students achieve their dreams.",
+    "website": "www.cuchd.in",
+    "contact": {
+      "phone": "1800 1212 88800",
+      "email": "admissions@cumail.in"
+    },
+    "placements": {
+      "placed_percentage": "9125+ Offers",
+      "average_package": "9.54 LPA",
+      "highest_package": "1.7 CR",
+      "top_recruiters": ["Microsoft", "Google", "Amazon", "IBM", "Wipro", "Cognizant", "Deloitte", "Samsung"]
+    },
+    "facilities": [
+      {
+        "id": 1,
+        "name": "Research Labs",
+        "description": "State-of-the-art research and computer labs"
+      },
+      {
+        "id": 2,
+        "name": "CU Library",
+        "description": "Extensive collection of books, journals, and digital resources"
+      },
+      {
+        "id": 3,
+        "name": "Sports Facilities",
+        "description": "Modern facilities for indoor and outdoor sports"
+      },
+      {
+        "id": 4,
+        "name": "Hostel Accommodation",
+        "description": "Secure and comfortable accommodation for students"
+      },
+      {
+        "id": 5,
+        "name": "Tech Incubator",
+        "description": "Dedicated space for startups and student projects"
+      },
+      {
+        "id": 6,
+        "name": "Campus WiFi",
+        "description": "High-speed internet access across the entire campus"
+      }
+    ]
+  }
+}

@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --primary-color: #4f46e5;     --primary-rgb: 79, 70, 229;     --secondary-color: #0d9488;     --secondary-rgb: 13, 148, 136;     --light-gray: #f8f9fa;
+    --dark-gray: #343a40;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+    line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+.section-heading {
+    font-weight: 800;
+    text-align: center;
+    color: var(--dark-gray);
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.section-heading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+
+a.navbar-brand {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.navbar-nav .nav-link {
+    font-weight: 600;
+    color: #555;
+    transition: color 0.2s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--primary-color);
+}
+
+.hero {
+    position: relative;
+    padding: 10rem 0;
+    color: white;
+    text-align: center;
+    background: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?fit=crop&w=1400&q=80') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+        background: linear-gradient(45deg, rgba(var(--primary-rgb), 0.7), rgba(var(--secondary-rgb), 0.6));
+    z-index: 1;
+}
+
+.hero .container-lg {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero .btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+.hero .btn-primary:hover {
+    background-color: #3730a3;     border-color: #3730a3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-outline-light:hover {
+    color: #333 !important; }
+
+.program-card {
+    background-color: #fff;
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.program-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+.program-card-top {
+    background-color: #FFF7E8;
+    padding: 1.25rem;
+    position: relative;
+    flex-grow: 1;
+}
+.program-card-duration {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333;
+}
+.program-card-icon {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    font-size: 1.25rem;
+    color: #555;
+}
+.program-card-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #000;
+    margin-top: 1.5rem;
+    line-height: 1.2;
+}
+.program-card-bottom {
+    background-color: #fff;
+    padding: 1rem 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    border-top: 1px solid #eee;
+}
+.program-card-logo {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background-color: #f0f4ff;
+}
+.program-card-department {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333;
+    margin-right: auto;
+    line-height: 1.3;
+}
+.program-card-btn {
+    background-color: #111;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 0.5rem 1.25rem;
+    border: none;
+    transition: background-color 0.2s ease;
+    text-decoration: none;
+}
+.program-card-btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.stat-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s ease;
+}
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.07);
+}
+.stat-card h3 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+.stat-card p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.modal-header .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+footer a {
+    color: #adb5bd;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+footer p {
+    color: #adb5bd !important;
+}
+
+
+#recruiterCarousel {
+    padding: 1rem 0;
+}
+
+.recruiter-logo-group {
+    height: 150px;
+    padding: 0 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+
+.recruiter-item-card {
+    width: 140px;
+    height: 120px;
+    padding: 1rem 0.5rem;
+    border: 1px solid #e9ecef;
+    border-radius: 0.5rem;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.recruiter-logo {
+    height: 40px;
+    max-width: 100px;
+    object-fit: contain;
+}
+
+.recruiter-text {
+    font-weight: 600;
+    color: #333;
+    font-size: 0.9rem;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 1rem;
+    background-size: 50%;
+}
+
+.facilities-card {
+    width: 100%;
+    height: 100%; 
+    min-height: 250px;
+    border-radius: 50px;
+    background: #e0e0e0; 
+    box-shadow: 20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    text-align: center;
+    gap: 0.75rem; 
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.facilities-card:hover {
+    transform: translateY(-3px); 
+    box-shadow: 10px 10px 30px #bebebe,
+                -10px -10px 30px #ffffff;
+}
+
+.facilities-card .fas {
+    font-size: 3.5rem; 
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.facilities-card .card-title {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--dark-gray);
+    margin-bottom: 0;
+}
+
+.facilities-card .card-text {
+    font-size: 0.9rem;
+    color: #666; 
+    line-height: 1.4;
+}
+
+
+#admissionForm .input-group-text {
+    display: none;
+}
+
+#admissionForm .form-control,
+#admissionForm .form-select {
+    border-radius: 5px !important;     padding: 10px;     outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    width: 100%;
+    box-shadow: none;     transition: all 0.3s ease;
+}
+
+#admissionForm .form-label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.25rem;
+}
+
+#admissionForm .form-control:focus,
+#admissionForm .form-select:focus {
+    border-color: var(--primary-color);
+}
+
+.was-validated #admissionForm .form-control:valid,
+.was-validated #admissionForm .form-select:valid {
+    border-color: green;
+}
+.was-validated #admissionForm .form-control:invalid,
+.was-validated #admissionForm .form-select:invalid {
+    border-color: #dc3545;
+}
+
+#admissionForm .btn-primary {
+    background-color: transparent;
+    border: 2px solid #cacaca;
+    border-radius: 0px;
+    box-sizing: border-box;
+    color: #818181;     cursor: pointer;
+    display: inline-block;
+    font-weight: 390;
+    letter-spacing: 2px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 12px 30px;     position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    font-size: 1.125em;
+    width: 100%; }
+
+#admissionForm .btn-primary::before {
+    content: " ";
+    width: 1.7rem;
+    height: 2px;
+    background: #cacaca;
+    top: 50%;
+    right: 1.5em;     position: absolute;
+    transform: translateY(-50%);
+    transition: background 0.3s linear, width 0.3s linear;
+}
+
+#admissionForm .btn-primary .fas {
+    margin-right: 0.5em;     transition: all 0.3s ease-in-out;
+}
+
+#admissionForm .btn-primary:hover {
+    color: white;
+    background: #cacaca;
+    transform: none;     box-shadow: none; }
+
+#admissionForm .btn-primary:hover::before {
+    width: 1.5rem;
+    background: white;
+}
+
+
+
+#feesTableContainer .table {
+    width: 100%;
+    margin-bottom: 0; 
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    border-radius: 0.3rem; 
+    overflow: hidden; 
+}
+
+#feesTableContainer .table th {
+    background-color: #f8f9fa;
+    color: #343a40;
+    font-weight: 600;
+    padding: 1rem;
+    text-align: left;
+    vertical-align: middle;
+    border-bottom: 2px solid #dee2e6;
+}
+
+#feesTableContainer .table td {
+    padding: 1rem;
+    vertical-align: middle;
+    color: #555;
+    border-top: 1px solid #f1f1f1;
+}
+
+#feesTableContainer .table tbody tr:nth-of-type(odd) {
+    background-color: #fcfcfc;
+}
+
+#feesTableContainer .table tbody tr:hover {
+    background-color: rgba(var(--primary-rgb), 0.05); 
+    color: #000;
+    transition: background-color 0.2s ease;
+}
+
+#feesTableContainer .table th:last-child,
+#feesTableContainer .table td:last-child {
+    text-align: right;
+    font-weight: 600;
+}
+
+#feesTableContainer .table td:last-child {
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+#admissionForm .form-check-input {
+    width: 1.5em; 
+    height: 1.5em;
+    margin-top: 0.1em;
+    border: 2px solid #adb5bd; 
+    transition: all 0.2s ease;
+}
+
+#admissionForm .form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+#admissionForm .form-check-input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(var(--primary-rgb), 0.25);
+}
+
+#admissionForm .form-check-label {
+    font-size: 0.95rem;
+    padding-left: 0.75rem; 
+    color: #555;
+}
+
+
+@media (max-width: 768px) {
+        .hero {
+        padding: 6rem 0;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;     }
+
+    .hero p {
+        font-size: 1.15rem;     }
+
+        .stat-card h3 {
+        font-size: 2rem;
+    }
+    
+        .program-card-title {
+        font-size: 1.5rem;
+    }
+
+        .facilities-card .fas {
+        font-size: 2.5rem;
+    }
+
+        .recruiter-logo-group {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+        .hero .d-flex {
+        flex-direction: column;
+    }
+}
